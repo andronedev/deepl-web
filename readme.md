@@ -11,7 +11,7 @@ deepl.translate("salut tout le monde","auto","EN")
 
 ```
 ## Return : 
-```json
+```js
 {
   resultText: 'hi everyone',
   allResults: [ 'hi everyone', 'hello everyone', 'hi, everyone', 'hi, everybody' ],
@@ -39,4 +39,3 @@ deepl.translate("salut tout le monde","auto","EN")
   sourceLang: 'FR'
 }
 ```
-

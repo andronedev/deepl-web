@@ -8,7 +8,8 @@
   },
   "keywords": [],
   "author": "andronedev",
-  "license": "ISC",
+  "license": "MIT",
+  "repository":"https://github.com/andronedev/deepl-api.git",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
