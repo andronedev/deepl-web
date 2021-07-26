@@ -1,0 +1,15 @@
+{
+  "name": "deepl-web",
+  "version": "1.0.0",
+  "description": "free deepl translation using the deepl web API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "andronedev",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
