@@ -1,7 +1,8 @@
 # Deepl unoficial client for Node.js
 
-free deepl translation using the deepl web API
+free deepl translation using the deepl web API (1.1.0)
 
+# Demo :
 ```js
 const deepl = require("deepl-web")
 
@@ -38,4 +39,20 @@ deepl.translate("salut tout le monde","auto","EN")
   targetLang: 'EN',
   sourceLang: 'FR'
 }
+```
+# Translation with cached results :
+if the translation is not yet in the cache, then it translates the text, adds it to the cache and returns it, if it already has the translation present it just returns it.
+```js
+deepl.translateWithCache(`Salut tout le monde, comment ca va ?`,"auto","EN")
+.then(console.log)
+.catch((error)=>console.log("error : " + error))
+
+```
+### Clear the cache : 
+```js
+deepl.clearCache()
+```
+### Get the cache (JSON) : 
+```js
+deepl.getCacheJson()
 ```

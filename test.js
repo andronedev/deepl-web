@@ -1,5 +1,7 @@
 const deepl = require("./index")
 
-deepl.translate("salut tout le monde","auto","EN")
-.then(console.log)
+deepl.translateWithCache(`salut tout le monde comment ca va ?`,"auto","EN")
+.then(rep=>console.log(rep.resultText))
 .catch((error)=>console.log("error : " + error))
+
+//console.log(deepl.getCacheJson())
