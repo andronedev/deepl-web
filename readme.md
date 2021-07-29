@@ -1,4 +1,4 @@
-# Deepl unoficial client for Node.js
+# Deepl translator (unofficial) client for Node.js
 
 free deepl translation using the deepl web API (1.2.0)
 
@@ -75,3 +75,5 @@ deepl.targetLanguagesAvailable()
   'SL',    'SV'
 ]
 ```
+
+### by AndroneDev www.androne.dev
