@@ -1,12 +1,27 @@
 const fetch = require("node-fetch")
 const JSONdb = require('simple-json-db');
 const db = new JSONdb('./translated.json');
+var TLA = []
 const translate = function(text, sourceLang = "auto", targetLang) {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
 
     if (sourceLang != "auto") { sourceLang = sourceLang.toUpperCase() }
 
     targetLang = targetLang.toUpperCase()
+
+    if (!TLA) {
+      try {
+        TLA = await targetLanguagesAvailable()
+      } catch (e) {
+        reject(e)
+        return
+      }
+    }
+
+    if (!TLA.includes(targetLang)) {
+      reject("Target language not available.")
+      return
+    }
 
     fetch("https://www2.deepl.com/jsonrpc?method=LMT_handle_jobs", {
       "headers": {
@@ -27,6 +42,7 @@ const translate = function(text, sourceLang = "auto", targetLang) {
     }).then(r => r.json()).then((json) => {
       if (json.error) {
         reject(json.error.message)
+        return
       }
       var detectedLanguage = "unsupported"
       var detectedLanguageIndice = 0
@@ -61,13 +77,26 @@ const translateWithCache = function(text, sourceLang = "auto", targetLang) {
       translate(text, sourceLang, targetLang).then(rep => {
         setImmediate(() => { db.set(key, rep) })
         resolve(rep)
-      })
+      }).catch(reject)
     }
   })
 
 }
 
-module.exports.getCacheJson = () =>{return db.JSON()};
+const targetLanguagesAvailable = function() {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.deepl.com/translator").then(rep => rep.text()).then(body => {
+
+      const regex = / (?:dl-attr="onClick{')([a-z-A-Z-\-]+)(?:'}: \$0.targetLang")/g
+      resolve(Array.from(body.matchAll(regex), m => m[1]))
+
+    })
+      .catch(reject)
+  })
+}
+
+module.exports.targetLanguagesAvailable = targetLanguagesAvailable
+module.exports.getCacheJson = () => { return db.JSON() };
 module.exports.clearCache = () => {
   try {
     db.JSON({})

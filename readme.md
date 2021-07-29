@@ -1,6 +1,6 @@
 # Deepl unoficial client for Node.js
 
-free deepl translation using the deepl web API (1.1.0)
+free deepl translation using the deepl web API (1.2.0)
 
 # Demo :
 ```js
@@ -55,4 +55,23 @@ deepl.clearCache()
 ### Get the cache (JSON) : 
 ```js
 deepl.getCacheJson()
+```
+### Get target languages available :
+```js
+deepl.targetLanguagesAvailable()
+.then(rep=>console.log(rep))
+.catch(function(e) {
+  console.log(e);
+});
+
+// return : 
+[
+  'en-US', 'en-GB', 'DE',    'FR',
+  'ES',    'pt-PT', 'pt-BR', 'IT',
+  'NL',    'PL',    'RU',    'JA',
+  'ZH',    'BG',    'CS',    'DA',
+  'ET',    'FI',    'EL',    'HU',
+  'LV',    'LT',    'RO',    'SK',
+  'SL',    'SV'
+]
 ```

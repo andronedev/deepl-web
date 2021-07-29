@@ -19,5 +19,65 @@
         },
         "targetLang": "EN",
         "sourceLang": "FR"
+    },
+    "FR_to_FR__salut tout le monde comment ca va ?": {
+        "resultText": "salut tout le monde comment ca va ?",
+        "allResults": [
+            "salut tout le monde comment ca va ?"
+        ],
+        "detectedLanguage": "FR",
+        "detectedLanguageIndice": 0.9982439999999999,
+        "detectedLanguages": {
+            "EN": 0.000214,
+            "FR": 0.9982439999999999,
+            "IT": 0.000049,
+            "NL": 0.00011499999999999999,
+            "RO": 0.000053,
+            "unsupported": 0.00132
+        },
+        "targetLang": "FR",
+        "sourceLang": "FR"
+    },
+    "auto_to_PT__salut tout le monde comment ca va ?": {
+        "resultText": "Olá a todos, como estão?",
+        "allResults": [
+            "Olá a todos, como estão?",
+            "Olá a todos. Como estão?",
+            "Olá a todos, como vão?",
+            "Olá, como estão?"
+        ],
+        "detectedLanguage": "FR",
+        "detectedLanguageIndice": 0.9982439999999999,
+        "detectedLanguages": {
+            "EN": 0.000214,
+            "FR": 0.9982439999999999,
+            "IT": 0.000049,
+            "NL": 0.00011499999999999999,
+            "RO": 0.000053,
+            "unsupported": 0.00132
+        },
+        "targetLang": "PT",
+        "sourceLang": "FR"
+    },
+    "auto_to_RO__salut tout le monde comment ca va ?": {
+        "resultText": "Bună ziua tuturor, ce mai faceți?",
+        "allResults": [
+            "Bună ziua tuturor, ce mai faceți?",
+            "Bună tuturor, ce mai faceți?",
+            "Salut tuturor, ce mai faceți?",
+            "Bună ziua, ce mai faceți?"
+        ],
+        "detectedLanguage": "FR",
+        "detectedLanguageIndice": 0.9982439999999999,
+        "detectedLanguages": {
+            "EN": 0.000214,
+            "FR": 0.9982439999999999,
+            "IT": 0.000049,
+            "NL": 0.00011499999999999999,
+            "RO": 0.000053,
+            "unsupported": 0.00132
+        },
+        "targetLang": "RO",
+        "sourceLang": "FR"
     }
 }
