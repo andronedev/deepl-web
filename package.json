@@ -1,6 +1,6 @@
 {
   "name": "deepl-web",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "free deepl translation using the deepl web API",
   "main": "index.js",
   "scripts": {

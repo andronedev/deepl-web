@@ -79,5 +79,76 @@
         },
         "targetLang": "RO",
         "sourceLang": "FR"
+    },
+    "FR_to_FR__hey comme un ": {
+        "resultText": "hey comme un",
+        "allResults": [
+            "hey comme un"
+        ],
+        "detectedLanguage": "FR",
+        "detectedLanguageIndice": 0.559774,
+        "detectedLanguages": {
+            "EN": 0.16053399999999998,
+            "DE": 0.002574,
+            "FR": 0.559774,
+            "ES": 0.015983999999999998,
+            "PT": 0.001454,
+            "IT": 0.098147,
+            "NL": 0.002728,
+            "PL": 0.000372,
+            "RU": 0.000016,
+            "ZH": 0.000021,
+            "JA": 0.000039,
+            "BG": 0.000016,
+            "CS": 0.000205,
+            "DA": 0.005490999999999999,
+            "EL": 0.000014,
+            "ET": 0.00038899999999999997,
+            "FI": 0.000289,
+            "HU": 0.000522,
+            "LT": 0.000032,
+            "LV": 0.0006929999999999999,
+            "RO": 0.010199999999999999,
+            "SK": 0.0036339999999999996,
+            "SL": 0.00017999999999999998,
+            "SV": 0.0009609999999999999,
+            "unsupported": 0.135731
+        },
+        "targetLang": "FR",
+        "sourceLang": "FR"
+    },
+    "auto_to_ES__salut comment ca va": {
+        "resultText": "hola como estas",
+        "allResults": [
+            "hola como estas",
+            "Hola, ¿cómo estás?",
+            "Hola, ¿cómo está usted?",
+            "Hola, ¿cómo está?"
+        ],
+        "detectedLanguage": "unsupported",
+        "detectedLanguageIndice": 0.535739,
+        "detectedLanguages": {
+            "EN": 0.026393999999999997,
+            "DE": 0.000107,
+            "FR": 0.394538,
+            "ES": 0.000063,
+            "PT": 0.000029999999999999997,
+            "IT": 0.005379,
+            "NL": 0.008194,
+            "PL": 0.000072,
+            "CS": 0.000012,
+            "DA": 0.002956,
+            "ET": 0.000222,
+            "FI": 0.000357,
+            "HU": 0.00017199999999999998,
+            "LT": 0.000028,
+            "RO": 0.020773,
+            "SK": 0.000026,
+            "SL": 0.000029,
+            "SV": 0.004902,
+            "unsupported": 0.535739
+        },
+        "targetLang": "ES",
+        "sourceLang": "FR"
     }
 }
