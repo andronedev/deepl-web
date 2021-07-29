@@ -95,6 +95,20 @@ const targetLanguagesAvailable = function() {
   })
 }
 
+
+const translateJson = (json, sourceLang = "auto", targetLang, cached) =>{
+  return new Promise((resolve,reject)=>{
+    let jsonTranslated = {}
+        Object.keys(json).forEach(function(k){
+          if(typeof obg[k]==="string"){
+            console.log(k + ' - ' + obj[k]);
+          }
+      });
+  })
+  
+}
+
+
 module.exports.targetLanguagesAvailable = targetLanguagesAvailable
 module.exports.getCacheJson = () => { return db.JSON() };
 module.exports.clearCache = () => {

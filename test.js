@@ -1,6 +1,6 @@
 const deepl = require("./index")
 
-deepl.translateWithCache(`salut tout le monde comment ca va ?`,"auto","en")
+deepl.translateWithCache(`hey comme un `,"FR","FR")
 .then(rep=>console.log(rep))
 .catch(function(e) {
   console.log(e);
