@@ -1,6 +1,6 @@
 # Deepl unoficial client for Node.js
 
-free deepl translation using the deepl web API (1.2.0)
+free deepl translation using the deepl web API
 
 # Demo :
 ```js
